@@ -1,20 +1,23 @@
 package main
 
 import (
-	"log"
-
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 func main() {
-	// Initialize a new Fiber app
 	app := fiber.New()
 
-	// Define a route for GET requests to "/"
-	app.Get("/", func(c *fiber.Ctx) error {
+	// Allow requests from React frontend
+	app.Use(cors.New())
+
+	app.Get("/home", func(c *fiber.Ctx) error {
+		return c.SendStatus(fiber.StatusOK)
+	})
+
+app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World!")
 	})
 
-	// Start server on port 3000
-	log.Fatal(app.Listen(":3000"))
+	app.Listen("127.0.0.1:3000")
 }
