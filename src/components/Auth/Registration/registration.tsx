@@ -1,5 +1,6 @@
 import NavBar from "../Login/components/nav"
-import NavTabs from "../Login/components/tab";
+import SignupForm from "../Signup/form"
+
 
 function Registration() {
     
@@ -7,7 +8,8 @@ function Registration() {
         
         <>
             <NavBar />
-            <NavTabs/>
+            <SignupForm/>
+
         </>
     )
 }

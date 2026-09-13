@@ -1,7 +1,7 @@
 // login form
 import "../../../../App.css";
 import NavBar from "../components/nav";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate, Link } from "react-router-dom"; 
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ function LoginForm() {
                 
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Don’t have an account yet? <span className="font-medium text-gray-700">
-                    <a href="#">Sign up</a>
+                    <Link to="/registration">Sign up</Link>
                   </span>
                 </p>
               </form>
