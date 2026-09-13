@@ -11,8 +11,6 @@
 ### Folder Structure
 
 
-### Stacks
-
 
 ### Programming Languages
 
