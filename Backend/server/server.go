@@ -1,17 +1,20 @@
 package main
 
 import (
-    "log"
+	"log"
 
-    "github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-    app := fiber.New()
+	// Initialize a new Fiber app
+	app := fiber.New()
 
-    app.Get("/", func(c fiber.Ctx) error {
-        return c.SendString("Hello, World!")
-    })
+	// Define a route for GET requests to "/"
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("Hello, World!")
+	})
 
-    log.Fatal(app.Listen(":3000"))
+	// Start server on port 3000
+	log.Fatal(app.Listen(":3000"))
 }
