@@ -6,17 +6,20 @@ function Analytic() {
     return(
 
         <>
-            <div className="flex flex-wrap justify-center items-start md:my-0 lg:my-0  items-center gap-4">
-                <div className="w-80 h-28 bg-blue-800 shadow-xs shadow-gray-300 border-l rounded-none border-none  border-l-5 border-blue-500">
+            <div className="flex flex-wrap justify-center items-center gap-4">
+                {/* dashboard */}
+                {/* Changed from 'fixed' to 'sticky top-0 z-50 shadow-sm py-4' so it stays anchored at the top without overlapping or breaking layout flow */}
+                <div className="w-auto flex flex-wrap justify-center bg-white shadow-none py-0 items-center gap-5" id="dashboard">
+                     <div className="w-80 h-28 bg-blue-800 shadow-xs shadow-gray-300 border-l rounded-none border-none  border-l-5 border-blue-500">
                     <div className="py-5">
-                        <span className="font-sans text-3xl text-center mx-10 my-80 font-semibold">
+                        <span className="font-sans text-3xl text-center mx-10 my-80 font-semibold text-white">
                         0
                     </span>
                     <br />
                     {/* <h1 className="font-sans text-lg font-semibold capitalize  mx-10">
                         emp.
                     </h1> */}
-                    <span className="text-sm font-sans capitalize mx-8">
+                    <span className="text-sm font-sans capitalize mx-8 text-white">
                         Total Employees
                     </span>
                     </div>
@@ -53,23 +56,22 @@ function Analytic() {
                     </span>
 
                     </div>
+               </div>
                 </div>
 
                 {/* visualization */}
 
-                <div className="flex flex-wrap justify-center items-center mt-10 items-start gap-8 h-80 bg-white">
+                <div className="flex flex-wrap justify-center items-center mt-10 items-start gap-28 h-200 bg-white">
 
-                    <div className="w-xl border-none h-96 shadow-none flex flex-col justify-start shadow-gray-300 bg-white">
+                    <div className="w-auto border-none h-96 shadow-none flex flex-col justify-start shadow-gray-300 bg-white">
 {/* <span className=" my-2 font-sans bg-white  text-lg capitalize text-left font-semibold">
                             total employees
                           
                         </span> */}
                           <EmpAnalytics/>
                     </div>
-                    <div className="w-80 border border-gray-200 h-64">
-                        <span className="mx-5 my-8 font-sans bg-white  text-lg capitalize text-left font-semibold">
-   employment
-</span>
+                    <div className="w-auto border-none border-gray-200 h-auto">
+                        
 
                         <EmployementAnalytics/>
                     </div>
