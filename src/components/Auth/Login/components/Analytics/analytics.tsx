@@ -57,7 +57,7 @@ function Analytic() {
 
                 {/* visualization */}
 
-                <div className="flex flex-wrap justify-evenly mt-10 items-start gap-10 h-80 bg-white">
+                <div className="flex flex-wrap justify-center items-center mt-10 items-start gap-8 h-80 bg-white">
 
                     <div className="w-xl border-none h-96 shadow-none flex flex-col justify-start shadow-gray-300 bg-white">
 {/* <span className=" my-2 font-sans bg-white  text-lg capitalize text-left font-semibold">
