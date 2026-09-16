@@ -12,8 +12,8 @@ function EmpAnalytics() {
         fontFamily: 'Inter, sans-serif',
       },
       // Color tokens mapped to match the primary Blue, Yellow, and Green dashboard panels
-      colors: ['#1E40AF', '#EAB308', '#16A34A'],
-      labels: ['Blue Department', 'Yellow Department', 'Green Department'],
+      colors: ['#1E40AF', '#EAB308', '#16A34A','#EAB308'],
+      labels: ['Human Resource', 'Finance', 'Procurement', 'Others'],
       dataLabels: {
         enabled: false,
       },
@@ -21,7 +21,7 @@ function EmpAnalytics() {
         show: false,
       },
       stroke: {
-        colors: ['transparent'],
+        
         lineCap: 'round',
       },
       plotOptions: {
@@ -62,7 +62,7 @@ function EmpAnalytics() {
   };
 
   return (
-    <div className="w-80 py-2" id="donut-chart">
+    <div className="w-80 py-2 cursor-pointer" id="donut-chart">
       <Chart 
         options={chartOptions.options} 
         series={chartOptions.series} 

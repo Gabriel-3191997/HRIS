@@ -1,15 +1,19 @@
 import EmpAnalytics from "./emp";
 import EmployementAnalytics from "./employment";
+// import NavBar from "../../../../employees/recruiter/nav"
+
 
 function Analytic() {
 
     return(
 
         <>
-            <div className="flex flex-wrap justify-center items-center gap-4">
+            <div className="flex flex-wrap md:justify-center lg:justify-center lg:items-center md:items-center justify-start items-start gap-4">
+        
+            
                 {/* dashboard */}
                 {/* Changed from 'fixed' to 'sticky top-0 z-50 shadow-sm py-4' so it stays anchored at the top without overlapping or breaking layout flow */}
-                <div className="w-auto flex flex-wrap justify-center bg-white shadow-none py-0 items-center gap-5" id="dashboard">
+                <div className="flex w-full sticky top-0 z-50 my-0 py-12 flex-wrap justify-center bg-white shadow-none items-center gap-5" id="dashboard">
                      <div className="w-80 h-28 bg-blue-800 shadow-xs shadow-gray-300 border-l rounded-none border-none  border-l-5 border-blue-500">
                     <div className="py-5">
                         <span className="font-sans text-3xl text-center mx-10 my-80 font-semibold text-white">
@@ -61,7 +65,7 @@ function Analytic() {
 
                 {/* visualization */}
 
-                <div className="flex flex-wrap justify-center items-center mt-10 items-start gap-28 h-200 bg-white">
+                <div className="flex flex-wrap justify-center items-center mt-0 items-start gap-28 h-200 bg-white">
 
                     <div className="w-auto border-none h-96 shadow-none flex flex-col justify-start shadow-gray-300 bg-white">
 {/* <span className=" my-2 font-sans bg-white  text-lg capitalize text-left font-semibold">

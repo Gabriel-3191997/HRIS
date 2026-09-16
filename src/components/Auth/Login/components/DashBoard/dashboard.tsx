@@ -103,7 +103,7 @@ function DashBoard() {
             </aside>
 
             <div className="p-2 sm:ml-64 mx-0">
-                <DashBoardNav/>
+                {/* <DashBoardNav/> */}
                 <Analytic/>
             </div>
         </>

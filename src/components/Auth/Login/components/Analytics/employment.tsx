@@ -89,8 +89,12 @@ function EmployementAnalytics() {
   return (
     <>
       <div className=" w-md bg-white border-none border-default rounded-none shadow-none p-4 md:p-6">
-        
-        <div id="bar-chart" className="py-5">
+        <div className="flex flex-col justify-center items-center py-0 bg-white">
+            <span className="font-sans text-sm capitalize">
+             overview employment rate
+            </span>
+          </div>
+        <div id="bar-chart" className="py-5 cursor-pointer">
           <Chart
             options={chartConfig.options}
             series={chartConfig.series}
@@ -100,7 +104,8 @@ function EmployementAnalytics() {
           />
         </div>
           
-        <div className="grid grid-cols-1 items-center border-light border-none border-t flex-nowrap justify-between">
+        <div className="grid grid-cols-1 bg-white items-center border-light border-none border-t flex-nowrap justify-between">
+          
           <div id="LastDays3dropdown" className="z-10 hidden bg-white border border-default-medium rounded-none shadow-lg w-44">
             <ul className="p-2 text-sm text-body font-medium" aria-labelledby="dropdownLastDays3Button">
               <li>
