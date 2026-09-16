@@ -1,5 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../../../../../App.css";
+import Analytic from "../Analytics/analytics";
+import DashBoardNav from "./nav";
 
 function DashBoard() {
     const navigate = useNavigate();
@@ -21,9 +23,9 @@ function DashBoard() {
             </button>
 
             <aside id="cta-button-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-900 border-none border-default">
+                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-950 border-none border-default">
                     <ul className="space-y-2 font-medium">
-                        <li>
+                        <li className="bg-black">
                             <Link to="/dashboard" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
                                 <span className="ms-3">Dashboard</span>
                             </Link>
@@ -35,33 +37,43 @@ function DashBoard() {
                             </button>
                             <ul id="dropdown-example" className="py-2 space-y-2">
                                 <li>
-                                    <Link to="/recruitment/add-employee" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">Add Employee</Link>
+                                    <Link to="/recruitment/add-employee" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Add Employee</Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruitment/employee-details" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">Employee Details</Link>
+                                    <Link to="/recruitment/employee-details" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Employee Details</Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruitment/payroll-enrollment" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">Payroll enrollment</Link>
+                                    <Link to="/recruitment/payroll-enrollment" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Payroll enrollment</Link>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <Link to="/attendance" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                            <Link to="/attendance" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Attendance</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/salary" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                            <Link to="/salary" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Salary</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                            <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Emergency</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/settings" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                            <Link to="/notification" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Notification</span>
+                            </Link>
+                        </li>
+                        {/* <li>
+                            <Link to="/profile" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Profile</span>
+                            </Link>
+                        </li> */}
+                        <li>
+                            <Link to="/settings" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Settings</span>
                             </Link>
                         </li>
@@ -84,16 +96,15 @@ function DashBoard() {
                             upgrade
                         </button>
                     </div>
-                    <div className="py-3 mx-3 text-white font-sans text-sm">
+                    {/* <div className="py-3 mx-3 text-white font-sans text-sm">
                         version 0.1
-                    </div>
+                    </div> */}
                 </div>
             </aside>
 
-            <div className="p-4 sm:ml-64">
-                <div className="p-4 border-default border-none rounded-none">
-                    
-                </div>
+            <div className="p-2 sm:ml-64 mx-0">
+                <DashBoardNav/>
+                <Analytic/>
             </div>
         </>
     );

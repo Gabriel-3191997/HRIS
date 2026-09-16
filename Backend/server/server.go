@@ -8,16 +8,17 @@ import (
 func main() {
 	app := fiber.New()
 
-	// Allow requests from React frontend
+	// allow request
 	app.Use(cors.New())
 
 	app.Get("/home", func(c *fiber.Ctx) error {
 		return c.SendStatus(fiber.StatusOK)
 	})
 
+	// default route
 app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World!")
 	})
 
-	app.Listen("127.0.0.1:3000")
+	app.Listen("127.0.0.1:3000/")
 }
