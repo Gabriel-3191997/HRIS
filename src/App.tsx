@@ -24,7 +24,7 @@ import DashBoard from './components/Auth/Login/components/DashBoard/dashboard'
 
 // import Analytic from './components/Auth/Login/components/DashBoard/Analytics/analytics'
 
-// import AddEmployee from './components/Auth/Login/components/DashBoard/Recruitment/AddEmployee'
+import AddEmployee from './components/employees/recruiter/add_employee'
 
 // import EmployeeDetails from './components/Auth/Login/components/DashBoard/Recruitment/EmployeeDetails'
 
@@ -103,18 +103,18 @@ function App() {
           element={<DashBoard />}
         >
 
-          {/*
+{/*           
           <Route
             index
             element={<Analytic />}
-          />
+          /> */}
 
           <Route
-            path="recruitment/add-employee"
+            path="recruitment/add_employee"
             element={<AddEmployee />}
           />
 
-          <Route
+          {/* <Route
             path="recruitment/employee-details"
             element={<EmployeeDetails />}
           />
@@ -148,7 +148,7 @@ function App() {
             path="settings"
             element={<Settings />}
           />
-          */}
+          */} 
 
         </Route>
 

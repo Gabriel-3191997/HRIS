@@ -1,11 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
-import "../../../../../App.css";
-import Analytic from "../Analytics/analytics";
-import PerformanceMetrix from "../Analytics/performance_metrix";
-// import DashBoardNav from "./nav";
-
-function DashBoard() {
-    const navigate = useNavigate();
+function SideBar(){
+const navigate = useNavigate();
 
     // Handles user logout and navigates back to the default home page
     const handleLogout = (e) => {
@@ -13,10 +7,10 @@ function DashBoard() {
         // Clear authentication state, tokens, or session storage here if needed
         navigate("/");
     };
+    return(
 
-    return (
         <>
-            <button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar" aria-controls="cta-button-sidebar" type="button" className="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden">
+<button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar" aria-controls="cta-button-sidebar" type="button" className="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden">
                 <span className="sr-only">Open sidebar</span>
                 <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h10"/>
@@ -108,13 +102,8 @@ function DashBoard() {
                 </div>
             </aside>
 
-            <div className="p-2 bg-white sm:ml-64 mx-0">
-                {/* <DashBoardNav/> */}
-                <Analytic/>
-                <PerformanceMetrix/>
-            </div>
         </>
-    );
+    )
 }
 
-export default DashBoard;
+export default SideBar

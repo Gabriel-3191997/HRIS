@@ -55,9 +55,11 @@ function Analytic() {
 
                 {/* visualization */}
 
-                <div className="flex flex-wrap justify-center items-center mt-0 items-start gap-28 h-200 bg-white">
+                <div className="flex flex-wrap justify-center items-center mt-0  gap-28 h-auto bg-white">
+                    <div className="white flex  flex-wrap justify-center items-center mx-0 h-auto">
+                        
 
-                    <div className="w-auto border-none h-96 shadow-none flex flex-col justify-start shadow-gray-300 bg-white">
+                    <div className="w-auto border-none h-96 shadow-none flex flex-wrap justify-center items-center gap-28 shadow-gray-300 bg-white">
                           <EmpAnalytics/>
                     </div>
                     <div className="w-auto border-none border-gray-200 h-auto">
@@ -67,6 +69,7 @@ function Analytic() {
                     </div>
                 </div>
 
+</div>
                 
         </div>
         </>

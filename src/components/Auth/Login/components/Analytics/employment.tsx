@@ -106,7 +106,7 @@ function EmployementAnalytics() {
           
         <div className="grid grid-cols-1 bg-white items-center border-light border-none border-t flex-nowrap justify-between">
           
-          <div id="LastDays3dropdown" className="z-10 hidden bg-white border border-default-medium rounded-none shadow-lg w-44">
+          <div id="LastDays3dropdown" className="z-10 hidden bg-white border-none border-default-medium rounded-none shadow-lg w-44">
             <ul className="p-2 text-sm text-body font-medium" aria-labelledby="dropdownLastDays3Button">
               <li>
                 <a href="#" className="inline-flex items-center w-full p-3 hover:bg-neutral-tertiary-medium hover:text-heading rounded-none">This Year (2026)</a>

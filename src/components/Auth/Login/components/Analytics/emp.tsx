@@ -62,7 +62,7 @@ function EmpAnalytics() {
   };
 
   return (
-    <div className="w-80 py-2 cursor-pointer" id="donut-chart">
+    <div className="w-lg py-2 cursor-pointer" id="donut-chart">
       <Chart 
         options={chartOptions.options} 
         series={chartOptions.series} 
