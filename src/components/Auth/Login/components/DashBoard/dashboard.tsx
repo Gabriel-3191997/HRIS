@@ -67,11 +67,16 @@ function DashBoard() {
                                 <span className="flex-1 ms-3 whitespace-nowrap">Notification</span>
                             </Link>
                         </li>
-                        {/* <li>
+                        <li>
                             <Link to="/profile" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Profile</span>
                             </Link>
-                        </li> */}
+                        </li>
+                                                <li>
+                            <Link to="/sms" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Sms</span>
+                            </Link>
+                        </li>
                         <li>
                             <Link to="/settings" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Settings</span>
@@ -102,7 +107,7 @@ function DashBoard() {
                 </div>
             </aside>
 
-            <div className="p-2 sm:ml-64 mx-0">
+            <div className="p-2 bg-white sm:ml-64 mx-0">
                 {/* <DashBoardNav/> */}
                 <Analytic/>
             </div>
