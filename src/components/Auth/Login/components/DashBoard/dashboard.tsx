@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../../../../../App.css";
 import Analytic from "../Analytics/analytics";
-import DashBoardNav from "./nav";
+// import DashBoardNav from "./nav";
 
 function DashBoard() {
     const navigate = useNavigate();
@@ -25,12 +25,12 @@ function DashBoard() {
             <aside id="cta-button-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                 <div className="h-full px-3 py-4 overflow-y-auto bg-gray-950 border-none border-default">
                     <ul className="space-y-2 font-medium">
-                        <li className="bg-black">
+                        <li className="bg-black w-full fixed top-0 left-0 z-40 py-5">
                             <Link to="/dashboard" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
                                 <span className="ms-3">Dashboard</span>
                             </Link>
                         </li>
-                        <li>
+                        <li className="mt-14">
                             <button type="button" className="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-none hover:text-fg-brand group" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Recruitment</span>
                                 <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/></svg>
