@@ -1,4 +1,6 @@
-function PerformanceMetrix(){
+import img1 from "../../../../../assets/images/534807897_2598810127178415_3359994755006233587_n.jpg"
+
+function PerformanceMetrix() {
 
     return(
 
@@ -10,12 +12,12 @@ function PerformanceMetrix(){
                     
                     <tr>
                         {/* departments */}
-                        <td className="font-medium py-3">department</td>
+                        <td className="font-medium py-3">Procurement</td>
                         {/* employees */}
                         <td className="font-medium py-3 flex flex-wrap justify-start items-start gap-0">
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
-                             <img src="" alt="" className="rounded-full border h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
+                            <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                            <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                             <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 cursor-pointer h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
                         </td>
                         {/* progress bar */}
                         <td className="font-medium py-3">
@@ -28,11 +30,11 @@ function PerformanceMetrix(){
                         
                     </tr>
                     <tr>
-                         <td className="font-medium py-3">department</td>
+                         <td className="font-medium py-3">Finance</td>
  <td className="font-medium py-3 flex flex-wrap justify-start items-start gap-0">
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
-                             <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
+                             <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                            <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                             <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 cursor-pointer h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
                         </td>
                         {/* progress bar */}
                         <td className="font-medium py-3">
@@ -45,11 +47,11 @@ function PerformanceMetrix(){
                        
                     </tr>
                      <tr>
-                         <td className="font-medium py-3">department</td>
+                         <td className="font-medium py-3">Information Technology</td>
  <td className="font-medium py-3 flex flex-wrap justify-start items-start gap-0">
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
-                            <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
-                             <img src="" alt="" className="rounded-full border h-5 w-5 object-cover  bg-blend-overlay bg-gray-700" />
+                            <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                            <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
+                             <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none cursor-pointer h-5 w-5 object-cover bg-blend-overlay bg-gray-700" />
                         </td>
                         {/* progress bar */}
                         <td className="font-medium py-3">
