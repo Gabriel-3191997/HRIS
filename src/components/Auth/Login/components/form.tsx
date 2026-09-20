@@ -29,7 +29,7 @@ function LoginForm() {
                 <label htmlFor="username" className="font-sans text-md py-5 text-gray-500">
                   username:
                   <br />
-                  <input type="text" name="username" className="rounded-none border border-gray-500 w-lg py-3" required />
+                  <input type="text" name="username" className="rounded border border-gray-500 w-lg py-3" required />
                 </label>
               </div>
               
@@ -38,7 +38,7 @@ function LoginForm() {
                 <label htmlFor="email" className="capitalize font-sans text-md py-5 text-gray-500">
                   email:
                   <br />
-                  <input type="email" name="email" className="rounded-none border border-gray-500 w-lg py-3" required />
+                  <input type="email" name="email" className="rounded border border-gray-500 w-lg py-3" required />
                 </label>
               </div>
               
@@ -47,12 +47,12 @@ function LoginForm() {
                 <label htmlFor="password" className="font-sans capitalize text-md py-5 text-gray-500">
                   password:
                   <br />
-                  <input type="password" name="password" className="rounded-none border border-gray-500 w-lg py-3" required />
+                  <input type="password" name="password" className="rounded border border-gray-500 w-lg py-3" required />
                 </label>
               </div>
               
-              <div className="py-5">
-                <input type="submit" className="bg-blue-900 cursor-pointer hover:bg-blue-950 font-sans text-md md:w-lg py-3 lg:w-lg text-white lowercase text-center" value="SIGN UP"/>
+              <div className="py-14">
+                <input type="submit" className="bg-blue-900 rounded cursor-pointer hover:bg-blue-800 font-sans text-md md:w-lg py-5 transition duration-1000 lg:w-lg text-white lowercase text-center" value="SIGN UP"/>
               </div>
             </form>
           </div>
@@ -67,4 +67,3 @@ function LoginForm() {
 }
 
 export default LoginForm;
-    
