@@ -1,21 +1,17 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, Outlet } from "react-router-dom"; // Added Outlet
 import "../../../../../App.css";
-import Analytic from "../Analytics/analytics";
-import PerformanceMetrix from "../Analytics/performance_metrix";
-// import DashBoardNav from "./nav";
 
 function DashBoard() {
     const navigate = useNavigate();
 
-    // Handles user logout and navigates back to the default home page
-    const handleLogout = (e) => {
+    const handleLogout = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        // Clear authentication state, tokens, or session storage here if needed
         navigate("/");
     };
 
     return (
         <>
+            {/* Sidebar toggle buttons (Mobile responsive controls - optional for desktop apps but kept intact) */}
             <button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar" aria-controls="cta-button-sidebar" type="button" className="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden">
                 <span className="sr-only">Open sidebar</span>
                 <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -23,11 +19,13 @@ function DashBoard() {
                 </svg>
             </button>
 
+            {/* Application Shell Sidebar Navigation Element */}
             <aside id="cta-button-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                 <div className="h-full px-3 py-4 overflow-y-auto bg-gray-950 border-none border-default">
                     <ul className="space-y-2 font-medium">
                         <li className="bg-black w-full fixed top-0 left-0 z-40 py-5">
-                            <Link to="/dashboard" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                            {/* Point to root or clear dashboard layout handler */}
+                            <Link to="/" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
                                 <span className="ms-3">Dashboard</span>
                             </Link>
                         </li>
@@ -38,13 +36,14 @@ function DashBoard() {
                             </button>
                             <ul id="dropdown-example" className="py-2 space-y-2">
                                 <li>
-                                    <Link to="/recruitment/add-employee" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Add Employee</Link>
+                                    {/* Matches the relative route target /add_employee */}
+                                    <Link to="/add_employee" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Add Employee</Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruitment/employee-details" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Employee Details</Link>
+                                    <Link to="/employee_details" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Employee Details</Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruitment/payroll-enrollment" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Payroll enrollment</Link>
+                                    <Link to="/payroll" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Payroll enrollment</Link>
                                 </li>
                             </ul>
                         </li>
@@ -73,7 +72,7 @@ function DashBoard() {
                                 <span className="flex-1 ms-3 whitespace-nowrap">Profile</span>
                             </Link>
                         </li>
-                                                <li>
+                        <li>
                             <Link to="/sms" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Sms</span>
                             </Link>
@@ -89,29 +88,17 @@ function DashBoard() {
                             </button>
                         </li>
                     </ul>
-                    <div id="alert-additional-content-1" className="p-4 mb-4 text-sm text-fg-brand-strong rounded-none bg-gray-800 border-none border-brand-subtle mt-4" role="alert">
-                        <div className="flex items-center justify-between">
-                            <div className="flex items-center">
-                                
-                            </div>
-                        </div>
-                        <div className="mt-20 mb-5 h-auto">
-                            
-                        </div>
-                        <button type="button" className="inline-flex items-center text-white bg-brand hover:bg-brand-strong box-border border-none border-transparent shadow-none font-medium rounded-none text-xs px-3 py-1.5 focus:outline-none">
-                            upgrade
-                        </button>
-                    </div>
-                    {/* <div className="py-3 mx-3 text-white font-sans text-sm">
-                        version 0.1
-                    </div> */}
                 </div>
             </aside>
 
+            {/* Central Work Content Pane */}
             <div className="p-2 bg-white sm:ml-64 mx-0">
-                {/* <DashBoardNav/> */}
-                <Analytic/>
-                <PerformanceMetrix/>
+                {/* 
+                  CRITICAL FIX: This Outlet component acts as a dynamic structural placeholder.
+                  When on "/", it loads Analytics + Performance.
+                  When on "/add_employee", it mounts the AddEmployee view without layout flickering.
+                */}
+                <Outlet />
             </div>
         </>
     );
