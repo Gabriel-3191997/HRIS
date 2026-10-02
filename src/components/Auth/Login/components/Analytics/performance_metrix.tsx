@@ -6,9 +6,12 @@ function PerformanceMetrix() {
 
         <>
         
+            <h1 className="text-md font-sans capitalize py-3 mx-20">
+                performance overview matrix
+            </h1>
             <div className="flex flex-wrap justify-start items-start bg-white border border-gray-200 border-none rounded-none mt-20 h-72 w-auto">
                 
-                <table className="w-5xl mx-10 px-0">
+                <table className="w-xl mx-10 px-0">
                     
                     <tr>
                         {/* departments */}
