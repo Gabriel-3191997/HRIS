@@ -63,6 +63,9 @@ function EmpAnalytics() {
 
   return (
     <div className="w-lg py-2 cursor-pointer" id="donut-chart">
+      <h1 className="text-sm text-center font-sans capitalize py-8">
+employees overview
+      </h1>
       <Chart 
         options={chartOptions.options} 
         series={chartOptions.series} 

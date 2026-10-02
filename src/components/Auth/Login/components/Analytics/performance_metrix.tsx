@@ -6,16 +6,21 @@ function PerformanceMetrix() {
 
         <>
         
-            <h1 className="text-md font-sans capitalize py-3 mx-20">
+            
+            <div className="flex flex-wrap justify-start items-start bg-white border border-gray-200 border-none rounded-none mt-0 h-72 gap-20 w-auto">
+                
+                <div className="w-80">
+                     <table className="w-lg mx-10 px-0">
+                    <tr>
+                        <th className="font-medium py-8">
+                            <h1 className="text-sm font-sans capitalize font-medium">
                 performance overview matrix
             </h1>
-            <div className="flex flex-wrap justify-start items-start bg-white border border-gray-200 border-none rounded-none mt-20 h-72 w-auto">
-                
-                <table className="w-xl mx-10 px-0">
-                    
+                        </th>
+                    </tr>
                     <tr>
                         {/* departments */}
-                        <td className=" py-3 font-semibold w-60">Procurement</td>
+                        <td className=" py-3 font-medium w-28">Procurement</td>
                         {/* employees */}
                         <td className="font-medium py-3 flex flex-wrap  justify-start items-start gap-0">
                             <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
@@ -25,7 +30,7 @@ function PerformanceMetrix() {
                         {/* progress bar */}
                         <td className="font-medium py-3">
 
-  <div className="w-44 bg-neutral-quaternary rounded-none">
+  <div className="w-28 bg-neutral-quaternary rounded-none">
     <div className="bg-danger text-xs font-medium text-white text-center p-0.5 leading-none rounded-none h-4 flex items-center justify-center" style={{ width: '10%' }}> 10%</div>
   </div>
 
@@ -33,7 +38,7 @@ function PerformanceMetrix() {
                         
                     </tr>
                     <tr>
-                         <td className="font-semibold py-3 w-60">Finance</td>
+                         <td className="font-medium py-3 w-44">Finance</td>
  <td className="font-medium py-3 flex flex-wrap justify-start items-start gap-0">
                              <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
                             <img src={img1} alt="" className="rounded-full border-none hover:opacity-50 h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
@@ -42,7 +47,7 @@ function PerformanceMetrix() {
                         {/* progress bar */}
                         <td className="font-medium py-3">
 
-  <div className="w-44 bg-neutral-quaternary rounded-none">
+  <div className="w-28 bg-neutral-quaternary rounded-none">
     <div className="bg-success text-xs font-medium text-white text-center p-0.5 leading-none rounded-none h-4 flex items-center justify-center" style={{ width: '45%' }}> 45%</div>
   </div>
 
@@ -50,7 +55,7 @@ function PerformanceMetrix() {
                        
                     </tr>
                      <tr>
-                         <td className="font-semibold py-3 w-60">Information Technology</td>
+                         <td className="font-medium py-3 w-50">Information Technology</td>
  <td className="font-medium py-3 flex flex-wrap justify-start items-start gap-0">
                             <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
                             <img src={img1} alt="" className="rounded-full hover:opacity-50 border-none h-5 w-5 cursor-pointer object-cover bg-blend-overlay bg-gray-700" />
@@ -59,13 +64,20 @@ function PerformanceMetrix() {
                         {/* progress bar */}
                         <td className="font-medium py-3">
 
-  <div className="w-44 bg-neutral-quaternary rounded-none">
+  <div className="w-28 bg-neutral-quaternary rounded-none">
     <div className="bg-success text-xs font-medium text-white text-center p-0.5 leading-none rounded-none h-4 flex items-center justify-center" style={{ width: '90%' }}> 90%</div>
   </div>
 
                         </td>
                     </tr>
                 </table>
+                </div>
+                {/* employment categories */}
+                <div className="w-xl">
+                    <h1 className="text-center font-sans capitalize text-sm py-5">
+employment categories
+                    </h1>
+                </div>
             </div>
         </>
     )
