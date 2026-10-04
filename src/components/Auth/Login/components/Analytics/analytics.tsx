@@ -1,5 +1,6 @@
 import EmpAnalytics from "./emp";
 import EmployementAnalytics from "./employment";
+import HireAnalytics from "./hire";
 // import NavBar from "../../../../employees/recruiter/nav"
 
 
@@ -70,7 +71,7 @@ function Analytic() {
                 </div>
 
 </div>
-                
+                <HireAnalytics/>
         </div>
         </>
     )

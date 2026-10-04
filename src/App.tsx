@@ -1,41 +1,43 @@
 import { useEffect } from 'react'
 import './App.css'
-import {
-  HashRouter,
-  Routes,
-  Route,
-} from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import API from './api/axios' // Import configured Axios instance
 
 import DashBoard from "./components/Auth/Login/components/DashBoard/dashboard"
-import AddEmployee from "./components/employees/recruitment/add_employee";
+import AddEmployee from "./components/employees/recruitment/add_employee"
 import Analytic from './components/Auth/Login/components/Analytics/analytics'
-// import PerformanceMetrix from './components/Auth/Login/components/Analytics/performance_metrix'
-import EmployeeDetails from './components/employees/recruitment/employee_details';
-import Attendance from './components/employees/recruitment/attendance';
-import PaymentEnrollment from './components/employees/recruitment/payment';
-import Salaray from './components/employees/recruitment/salaray';
-import Emergency from './components/employees/recruitment/emergency';
+import EmployeeDetails from './components/employees/recruitment/employee_details'
+import Attendance from './components/employees/recruitment/attendance'
+import PaymentEnrollment from './components/employees/recruitment/payment'
+import Salaray from './components/employees/recruitment/salaray'
+import Emergency from './components/employees/recruitment/emergency'
 
 function App() {
 
   useEffect(() => {
-    fetch('http://127.0.0/home')
-      .then((res) => {
-        if (res.ok) console.log('Successfully connected to Go Fiber backend')
+    // Axios automatically parses JSON responses and handles HTTP error statuses (4xx, 5xx)
+    API.get('/home')
+      .then((response) => {
+        console.log('Successfully connected to Go Fiber backend:', response.data);
       })
-      .catch((err) => console.error('Failed to connect to Go backend:', err))
-  }, [])
+      .catch((error) => {
+        if (error.response) {
+          // Server responded with a status outside 2xx range
+          console.error(`Backend Error (${error.response.status}):`, error.response.data);
+        } else if (error.request) {
+          // Request was made but no response was received (e.g., server offline or CORS issue)
+          console.error('No response from Go Fiber server:', error.request);
+        } else {
+          console.error('Axios configuration error:', error.message);
+        }
+      });
+  }, []);
 
   return (
     <HashRouter>
       <Routes>
         <Route path="/*" element={<DashBoard />}>
-          <Route index element={
-            <>
-              <Analytic />
-              {/* <PerformanceMetrix /> */}
-            </>
-          } />
+          <Route index element={<Analytic />} />
           <Route path="add_employee" element={<AddEmployee />} />
           <Route path="employee_details" element={<EmployeeDetails/>} />
           <Route path="attendance" element={<Attendance />} />
