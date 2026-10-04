@@ -73,24 +73,30 @@ function Emergency() {
                     </div>
             
                     {/* actions */}
-                    <div className="w-auto md:my-3 md:mt-5 bg-white h-auto">
+                    <div className="w-auto md:my-2 md:mt-2 bg-white h-auto">
                         <label htmlFor="resignation" className="font-sans capitalize text-md">
                             <input type="checkbox" name="resignation" id="resignation"/> resignation
                         </label>
 </div>             
 {/* leave */}
-<div className="w-auto md:my-3 bg-white h-auto">
+<div className="w-auto md:my-2 bg-white h-auto">
                         <label htmlFor="leave" className="font-sans capitalize text-md">
                             <input type="checkbox" name="leave" id="leave"/> leave
                         </label>
                     </div>     
                         
                     {/* termination */}
-                    <div className="w-auto md:my-3 bg-white h-auto">
+                    <div className="flex flex-wrap md:justify-between justify-center items-center h-auto bg">
+                        <div className="md:w-lg w-auto md:my-0 bg-white h-auto">
                         <label htmlFor="terminate" className="font-sans capitalize text-md">
                             <input type="checkbox" name="terminate" id="terminate"/> terminate
                         </label>
-</div>   
+                        </div>   
+                        <div className="md:w-auto w-auto">
+                            <input type="submit" value="submit" className="bg-blue-800 text-white py-2 cursor-pointer px-5" />
+                        </div>
+                    </div>
+
 
                     
 {/*duration */}
