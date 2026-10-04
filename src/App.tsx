@@ -2,15 +2,16 @@ import { useEffect } from 'react'
 import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import API from './api/axios' // Import configured Axios instance
+import DashBoard from "./HR/components/Auth/Login/components/DashBoard/dashboard"
+import AddEmployee from "./HR/components/employees/recruitment/add_employee"
+import Analytic from './HR/components/Auth/Login/components/Analytics/analytics'
+import EmployeeDetails from './HR/components/employees/recruitment/employee_details'
+import Attendance from './HR/components/employees/recruitment/attendance'
+import PaymentEnrollment from './HR/components/employees/recruitment/payment'
+import Salaray from './HR/components/employees/recruitment/salaray'
+import Emergency from './HR/components/employees/recruitment/emergency'
+// import Home from "./HR/components/layout"
 
-import DashBoard from "./components/Auth/Login/components/DashBoard/dashboard"
-import AddEmployee from "./components/employees/recruitment/add_employee"
-import Analytic from './components/Auth/Login/components/Analytics/analytics'
-import EmployeeDetails from './components/employees/recruitment/employee_details'
-import Attendance from './components/employees/recruitment/attendance'
-import PaymentEnrollment from './components/employees/recruitment/payment'
-import Salaray from './components/employees/recruitment/salaray'
-import Emergency from './components/employees/recruitment/emergency'
 
 function App() {
 
@@ -36,6 +37,9 @@ function App() {
   return (
     <HashRouter>
       <Routes>
+
+        {/* <Route path='/*' element={<DashBoard />}></Route> */}
+        {/* <Route path="home" element={<Home />}></Route> */}
         <Route path="/*" element={<DashBoard />}>
           <Route index element={<Analytic />} />
           <Route path="add_employee" element={<AddEmployee />} />

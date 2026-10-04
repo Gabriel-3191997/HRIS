@@ -21,13 +21,13 @@ function HireAnalytics() {
           <div className="flex flex-col gap-5 py-2 border-l-none border-b-none border-gray-800">
             {chartData.map((item, index) => (
               <div key={item.label || index} className="flex items-center">
-                <span className="w-16 text-xs font-sans text-gray-700 text-left pr-2 truncate">
+                <span className="w-16 text-xs font-sans md:text-md text-gray-800 text-left pr-2 truncate">
                   {item.label}
                 </span>
                 <div className="flex-1 bg-transparent">
                   <div
                     style={{ width: `${(item.value / maxValue) * 100}%` }}
-                    className="bg-[#2108C3] h-8 transition-all duration-300 hover:opacity-50 cursor-pointer"
+                    className="bg-[#1E40AF] h-8 transition-all duration-300 hover:opacity-50 cursor-pointer"
                   />
                 </div>
               </div>
@@ -36,12 +36,12 @@ function HireAnalytics() {
 
           {/* X-Axis Ticks & Labels */}
           <div className="ml-16 flex justify-between text-[10px] text-gray-700 pt-1 font-sans">
-            <span>2021</span>
-            <span>2022</span>
-            <span>2023</span>
-            <span>2024</span>
-            <span>2025</span>
-            <span>2026</span>
+            {/* <span>2021</span> */}
+            <span className="md:text-md font-sans">2022</span>
+            <span className="md:text-md font-sans">2023</span>
+            <span className="md:text-md font-sans">2024</span>
+            <span className="md:text-md font-sans">2025</span>
+            <span className="md:text-md font-sans">2026</span>
           </div>
 
               </div>

@@ -1,10 +1,10 @@
-import React from "react";
+
 
 function AddEmployee() {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
-      <form action="post" className="space-y-6">
-        {/* Form Fields Grid */}
+      <form action="post" className="space-y-6 md:mt-10">
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
           {/* First Name */}
           <div>
@@ -179,7 +179,7 @@ function AddEmployee() {
               type="file"
               name="photo"
               id="photo"
-              className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border file:border-gray-400 file:text-sm file:bg-gray-50 hover:file:bg-gray-100 cursor-pointer"
+              className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border file:border-gray-400 border-none file:text-sm file:bg-gray-50 hover:file:bg-gray-100 cursor-pointer"
             />
           </div>
         </div>

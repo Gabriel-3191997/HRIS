@@ -89,7 +89,7 @@ function EmployementAnalytics() {
   return (
     <>
       <div className=" w-md bg-white border-none border-default rounded-none shadow-none p-0 md:p-0">
-        <div className="flex flex-col justify-start items-center py-0 bg-white shadow shadow-blue-100">
+        <div className="flex flex-col justify-start items-center py-0 bg-white shadow-none shadow-blue-100">
             <span className="font-sans text-sm capitalize py-5">
              overview employment rate
             </span>

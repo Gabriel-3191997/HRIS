@@ -1,5 +1,5 @@
 import { Link, useNavigate, Outlet } from "react-router-dom"; // Added Outlet
-import "../../../../../App.css";
+import "../../../../../../App.css";
 
 function DashBoard() {
     const navigate = useNavigate();
