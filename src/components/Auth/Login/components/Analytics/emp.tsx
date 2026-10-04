@@ -62,7 +62,7 @@ function EmpAnalytics() {
   };
 
   return (
-    <div className="w-lg py-2 cursor-pointer" id="donut-chart">
+    <div className="w-lg py-2 cursor-pointer shadow-none" id="donut-chart">
       <h1 className="text-sm text-center font-sans capitalize py-8">
 employees overview
       </h1>

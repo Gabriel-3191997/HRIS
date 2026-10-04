@@ -88,12 +88,12 @@ function EmployementAnalytics() {
 
   return (
     <>
-      <div className=" w-md bg-white border-none border-default rounded-none shadow-none p-4 md:p-6">
-        <div className="flex flex-col justify-center items-center py-0 bg-white">
-            <span className="font-sans text-sm capitalize">
+      <div className=" w-md bg-white border-none border-default rounded-none shadow-none p-0 md:p-0">
+        <div className="flex flex-col justify-start items-center py-0 bg-white shadow shadow-blue-100">
+            <span className="font-sans text-sm capitalize py-5">
              overview employment rate
             </span>
-          </div>
+          
         <div id="bar-chart" className="py-5 cursor-pointer">
           <Chart
             options={chartConfig.options}
@@ -103,10 +103,10 @@ function EmployementAnalytics() {
             height={340}
           />
         </div>
-          
+          </div>
         <div className="grid grid-cols-1 bg-white items-center border-light border-none border-t flex-nowrap justify-between">
           
-          <div id="LastDays3dropdown" className="z-10 hidden bg-white border-none border-default-medium rounded-none shadow-lg w-44">
+          <div id="LastDays3dropdown" className="z-10 hidden bg-white border-none border-default-medium rounded-none shadow-lg w-36">
             <ul className="p-2 text-sm text-body font-medium" aria-labelledby="dropdownLastDays3Button">
               <li>
                 <a href="#" className="inline-flex items-center w-full p-3 hover:bg-neutral-tertiary-medium hover:text-heading rounded-none">This Year (2026)</a>

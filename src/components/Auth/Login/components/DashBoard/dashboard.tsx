@@ -11,7 +11,6 @@ function DashBoard() {
 
     return (
         <>
-            {/* Sidebar toggle buttons (Mobile responsive controls - optional for desktop apps but kept intact) */}
             <button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar" aria-controls="cta-button-sidebar" type="button" className="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden">
                 <span className="sr-only">Open sidebar</span>
                 <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -64,7 +63,7 @@ function DashBoard() {
                         </li>
                         <li>
                             <Link to="/notification" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+                                <span className="flex-1 ms-3 whitespace-nowrap">Notification</span>
                             </Link>
                         </li>
                         <li>
@@ -74,7 +73,7 @@ function DashBoard() {
                         </li>
                         <li>
                             <Link to="/sms" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">Sms</span>
+                                <span className="flex-1 ms-3 whitespace-nowrap">Account</span>
                             </Link>
                         </li>
                         <li>
@@ -91,13 +90,7 @@ function DashBoard() {
                 </div>
             </aside>
 
-            {/* Central Work Content Pane */}
             <div className="p-2 bg-white sm:ml-64 mx-0">
-                {/* 
-                  CRITICAL FIX: This Outlet component acts as a dynamic structural placeholder.
-                  When on "/", it loads Analytics + Performance.
-                  When on "/add_employee", it mounts the AddEmployee view without layout flickering.
-                */}
                 <Outlet />
             </div>
         </>

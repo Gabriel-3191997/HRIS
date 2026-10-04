@@ -7,10 +7,10 @@ function PerformanceMetrix() {
         <>
         
             
-            <div className="flex flex-wrap justify-start items-start bg-white border border-gray-200 border-none rounded-none mt-0 h-72 gap-20 w-auto">
+            <div className="flex flex-wrap justify-start items-start bg-white border border-gray-200 border-none rounded-none mt-10 h-96 gap-5 w-auto">
                 
-                <div className="w-80">
-                     <table className="w-lg mx-10 px-0">
+                <div className="w-120 py-8 shadow mx-5">
+                     <table className="w-96 mx-8 h-20">
                     <tr>
                         <th className="font-medium py-8">
                             <h1 className="text-sm font-sans capitalize font-medium">
@@ -73,11 +73,11 @@ function PerformanceMetrix() {
                 </table>
                 </div>
                 {/* employment categories */}
-                <div className="w-xl">
+                {/* <div className="w-xl">
                     <h1 className="text-center font-sans capitalize text-sm py-5">
 employment categories
                     </h1>
-                </div>
+                </div> */}
             </div>
         </>
     )
