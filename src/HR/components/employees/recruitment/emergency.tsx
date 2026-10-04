@@ -66,7 +66,7 @@ function Emergency() {
                     </div>
                     {/* duration of length */}
                      <div className="w-auto md:my-3 bg-white h-auto">
-                        <label htmlFor="returnDate">Months: <br />
+                        <label htmlFor="returnDate">Months | Year: <br />
                             <input type="number" name="leave_duration" id="leave_duration"/>
                         </label>
                         </div>
