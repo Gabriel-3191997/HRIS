@@ -38,6 +38,10 @@ function DashBoard() {
                                     {/* Matches the relative route target /add_employee */}
                                     <Link to="/add_employee" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Add Employee</Link>
                                 </li>
+                                {/* boimetrics */}
+                                <li>
+                                    <Link to="/biometrics" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Biometrics</Link>
+                                </li>
                                 <li>
                                     <Link to="/employee_details" className="pl-10 flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2  hover:text-fg-brand group">Employee Details</Link>
                                 </li>
@@ -57,10 +61,16 @@ function DashBoard() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">Emergency</span>
+                            <Link to="/action" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Action</span>
                             </Link>
                         </li>
+<li>
+                            <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Employee Request</span>
+                            </Link>
+                        </li>
+
                         <li>
                             <Link to="/notification" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Notification</span>
@@ -72,7 +82,7 @@ function DashBoard() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/sms" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
+                            <Link to="/account" className="flex items-center px-2 py-1.5 text-body rounded-none hover:bg-gray-900 py-2 hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Account</span>
                             </Link>
                         </li>
