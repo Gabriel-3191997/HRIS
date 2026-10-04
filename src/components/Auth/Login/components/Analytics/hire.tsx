@@ -5,7 +5,7 @@ function HireAnalytics() {
     { label: 'Remote', value: 10 },
     { label: 'Hybrid', value: 1 },
     { label: 'Onsite', value: 8 },
-    { label: '', value: 3 },
+    // { label: '', value: 3 },
   ];
 
   const maxValue = 10; // Maximum value on x-axis scale
@@ -28,7 +28,7 @@ function HireAnalytics() {
                 <div className="flex-1 bg-transparent">
                   <div
                     style={{ width: `${(item.value / maxValue) * 100}%` }}
-                    className="bg-[#2108C3] h-8 transition-all duration-300"
+                    className="bg-[#2108C3] h-8 transition-all duration-300 hover:opacity-50 cursor-pointer"
                   />
                 </div>
               </div>
@@ -36,18 +36,18 @@ function HireAnalytics() {
           </div>
 
           {/* X-Axis Ticks & Labels */}
-          {/* <div className="ml-16 flex justify-between text-[10px] text-gray-700 pt-1 font-sans">
-            <span>0</span>
-            <span>2</span>
-            <span>4</span>
-            <span>6</span>
-            <span>8</span>
-            <span>10</span>
-          </div> */}
+          <div className="ml-16 flex justify-between text-[10px] text-gray-700 pt-1 font-sans">
+            <span>2021</span>
+            <span>2022</span>
+            <span>2023</span>
+            <span>2024</span>
+            <span>2025</span>
+            <span>2026</span>
+          </div>
 
               </div>
               <div className="w-xl bg-white h-80">
-                  
+                  {/* finger print scanner animation */}
               </div>
       </div>
     </>
