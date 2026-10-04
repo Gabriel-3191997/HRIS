@@ -12,7 +12,7 @@ function HireAnalytics() {
   return (
       <>
          
-      <div className="flex flex-wrap justify-start items-start h-auto md:justify-start md:items-start md:mx-0 bg-white md:mt-20">
+      <div className="flex flex-wrap justify-start items-start h-auto md:justify-start md:items-start md:mx-0 bg-white md:mt-0">
         <div className="w-auto md:w-80 bg-white  h-auto">
            <h1 className="text-sm font-sans text-center capitalize md:my-5">
                over all hiring analytics
