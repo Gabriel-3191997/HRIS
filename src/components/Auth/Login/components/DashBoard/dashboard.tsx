@@ -60,11 +60,7 @@ function DashBoard() {
                                 <span className="flex-1 ms-3 whitespace-nowrap">Salary</span>
                             </Link>
                         </li>
-                        <li>
-                            <Link to="/action" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">Action</span>
-                            </Link>
-                        </li>
+                        
 <li>
                             <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Employee Request</span>
