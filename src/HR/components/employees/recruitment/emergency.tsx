@@ -3,7 +3,7 @@ function Emergency() {
     return(
 
         <>
-            <div className="flex flex-col md:justify-start md:my-5 my-8 md:items-start md:gap-10 gap-5 bg-white h-auto">
+            <div className="flex flex-col md:justify-start md:my-2 my-2 md:items-start md:gap-10 gap-5 bg-white h-auto">
                 <form action="" method="post" className="w-auto md:mx-20">
                     <div className="w-auto md:my-3 bg-white h-auto">
                          <label htmlFor="employeeName" className="font-sans text-md capitalize">
@@ -36,7 +36,7 @@ function Emergency() {
                     <div className="flex flex-wrap md:justify-start md:items-start justify-center md:gap-10 items-center h-auto bg-white">
                     {/* start date */}
                      <div className="w-auto md:my-3 bg-white h-auto">
-                        <label htmlFor="startDate"> Start date: <br />
+                        <label htmlFor="startDate"> Start Date: <br />
                             <input type="date" name="startDate" id="startDate"/>
                         </label>
                     </div>
@@ -47,9 +47,33 @@ function Emergency() {
                         </label>
                         </div>
                     </div>
+                    {/* leave */}
+
+                    <div className="flex flex-wrap md:justify-start md:items-start justify-center md:gap-10 items-center h-auto bg-white">
+                    {/* leave types */}
+                     <div className="w-auto md:my-3 bg-white h-auto">
+                        <label htmlFor="startDate"> Leave Type: <br />
+                            <select name="leave_type" id="leave_type">
+                                <option value="None">None</option>
+                                <option value="Medical">
+                                    Medical
+                                </option>
+                                    <option value="Academics">
+                                        Academics
+                                </option>
+                            </select>
+                        </label>
+                    </div>
+                    {/* duration of length */}
+                     <div className="w-auto md:my-3 bg-white h-auto">
+                        <label htmlFor="returnDate">Months: <br />
+                            <input type="number" name="leave_duration" id="leave_duration"/>
+                        </label>
+                        </div>
+                    </div>
             
                     {/* actions */}
-                    <div className="w-auto md:my-3 md:mt-10 bg-white h-auto">
+                    <div className="w-auto md:my-3 md:mt-5 bg-white h-auto">
                         <label htmlFor="resignation" className="font-sans capitalize text-md">
                             <input type="checkbox" name="resignation" id="resignation"/> resignation
                         </label>
