@@ -49,7 +49,7 @@ function Emergency() {
                     </div>
                     {/* leave */}
 
-                    <div className="flex flex-wrap md:justify-start md:items-start justify-center md:gap-10 items-center h-auto bg-white">
+                    <div className="flex flex-wrap md:justify-start md:items-start justify-center md:gap-18 items-center h-auto bg-white">
                     {/* leave types */}
                      <div className="w-auto md:my-3 bg-white h-auto">
                         <label htmlFor="startDate"> Leave Type: <br />
