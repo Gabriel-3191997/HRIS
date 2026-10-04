@@ -20,7 +20,7 @@ function EmployementAnalytics() {
         color: '#EAB308', 
       },
       {
-        name: 'Pension',
+        name: 'Retirement',
         data: pensionValues,       
         color: '#16A34A', 
       }
