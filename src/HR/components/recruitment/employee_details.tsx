@@ -86,6 +86,18 @@ function EmployeeDetails(){
                     <img src="" alt="" className="h-32 w-full object-cover" />
                     <div className="bg-gray-200 h-14 w-auto"></div>
                 </div>
+                {/* pagination */}
+                <div className="flex flex-wrap md:justify-end md:items-end md:mx-2 md:py-2">
+                        <ul className="flex flex-wrap md:justify-evenly md:gap-5 font-sans lowercase text-blue-800">
+                                <li>
+                            <a href="#">previous</a>
+                        </li>
+                        <span className="text-gray-300">||</span>
+<li>
+                            <a href="#">next</a>
+                            </li>
+                        </ul>
+                </div>
             </div>
         </>
     )

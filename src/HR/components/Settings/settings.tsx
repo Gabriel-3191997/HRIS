@@ -1,7 +1,10 @@
+import HRDatabase from "./DataBase/storage/database"
 
 function Settings(){
     return(
         <>
+             <div className="flex w-full sticky top-0 z-50 my-0 py-8 flex-wrap md:justify-start md:h-auto bg-white shadow-none md:items-start gap-0">
+           </div>
         <div className="flex flex-wrap md:justify-start md:items-start gap-5 bg-white h-auto">
             {/* <h1 className="md:py-3 font-sans md:text-3xl capitalize md:mx-10">
                 account settings
@@ -38,8 +41,9 @@ function Settings(){
                     </div>
                 </form>
                 {/* theme */}
-                {/* dark mode */}
+
                 <div className="flex flex-col md:justify-start md:items-start bg-white">
+                                    {/* dark mode */}
                     <div className="w-auto py-2">
                         <label htmlFor="darkmode" className="text-sm capitalize md:mx-10">
                             <input type="checkbox" name="darkmode" id="darkmode" /> darkmode</label>
@@ -51,6 +55,7 @@ function Settings(){
                     </div>
                 </div>
             </div>
+            <HRDatabase/>
         </>
     )
 }
