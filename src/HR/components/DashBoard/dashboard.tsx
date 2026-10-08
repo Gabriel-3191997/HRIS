@@ -1,5 +1,5 @@
 import { Link, useNavigate, Outlet } from "react-router-dom"; // Added Outlet
-import "../../../../../../App.css";
+import "../../../App.css";
 
 function DashBoard() {
     const navigate = useNavigate();
@@ -28,6 +28,7 @@ function DashBoard() {
                                 <span className="ms-3">Dashboard</span>
                             </Link>
                         </li>
+                        
                         <li className="mt-14">
                             <button type="button" className="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-none hover:text-fg-brand group" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Recruitment</span>
@@ -51,16 +52,22 @@ function DashBoard() {
                             </ul>
                         </li>
                         <li>
+                            
+                            <Link to="/analysis" className="flex items-center px-2 py-1.5 text-body rounded-none hover:text-fg-brand group">
+                                <span className="ms-3">Analysis</span>
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="/attendance" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Attendance</span>
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/salary" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Salary</span>
                             </Link>
                         </li>
-                        
+                         */}
 <li>
                             <Link to="/emergency" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Employee Request</span>
@@ -70,6 +77,11 @@ function DashBoard() {
                         <li>
                             <Link to="/notification" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
                                 <span className="flex-1 ms-3 whitespace-nowrap">Notification</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/pending" className="flex items-center px-2 py-1.5 text-body hover:bg-gray-900 py-2  rounded-none hover:text-fg-brand group">
+                                <span className="flex-1 ms-3 whitespace-nowrap">Request</span>
                             </Link>
                         </li>
                         <li>

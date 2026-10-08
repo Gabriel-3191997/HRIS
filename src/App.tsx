@@ -2,14 +2,19 @@ import { useEffect } from 'react'
 import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import API from './api/axios' // Import configured Axios instance
-import DashBoard from "./HR/components/Auth/Login/components/DashBoard/dashboard"
-import AddEmployee from "./HR/components/employees/recruitment/add_employee"
-import Analytic from './HR/components/Auth/Login/components/Analytics/analytics'
-import EmployeeDetails from './HR/components/employees/recruitment/employee_details'
-import Attendance from './HR/components/employees/recruitment/attendance'
-import PaymentEnrollment from './HR/components/employees/recruitment/payment'
-import Salaray from './HR/components/employees/recruitment/salaray'
-import Emergency from './HR/components/employees/recruitment/emergency'
+import DashBoard from "./HR/components/DashBoard/dashboard"
+import dashboard from "./HR/components/DashBoard/dashboard"
+import AddEmployee from "./HR/components/recruitment/add_employee"
+import Analysis from "./HR/components/Analysis/analytics"
+import Analytic from "./HR/components/Analytics/analytics"
+import EmployeeDetails from './HR/components/recruitment/employee_details'
+import Attendance from './HR/components/Attendance/attendance'
+import PaymentEnrollment from './HR/components/Salary/payment'
+import Salaray from './HR/components/Salary/salaray'
+import Emergency from './HR/components/Request/emergency'
+import Settings from './HR/components/Settings/settings'
+import Notification from './HR/components/Notifications/notification'
+import PendingRequest from './HR/components/Request/pending_request'
 // import Home from "./HR/components/layout"
 
 
@@ -41,6 +46,7 @@ function App() {
         {/* <Route path='/*' element={<DashBoard />}></Route> */}
         {/* <Route path="home" element={<Home />}></Route> */}
         <Route path="/*" element={<DashBoard />}>
+          <Route path="dashboard" element={<DashBoard />} />
           <Route index element={<Analytic />} />
           <Route path="add_employee" element={<AddEmployee />} />
           <Route path="employee_details" element={<EmployeeDetails/>} />
@@ -48,7 +54,12 @@ function App() {
           <Route path="payroll" element={<PaymentEnrollment/>} />
           <Route path="salary" element={<Salaray />} />
           <Route path="emergency" element={<Emergency/>} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="analysis" element={<Analysis />} />
+          <Route path='notification' element={<Notification />} />
+          <Route path="pending" element={ <PendingRequest/>}/>
         </Route>
+
       </Routes>
     </HashRouter>
   )

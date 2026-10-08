@@ -1,5 +1,5 @@
 
-import SignupForm from "../Signup/form"
+import SignupForm from "./Signup/form"
 
 
 function Registration() {

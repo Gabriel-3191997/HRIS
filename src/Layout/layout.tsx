@@ -1,4 +1,4 @@
-import DashBoard from "./Auth/Login/components/DashBoard/dashboard";
+import DashBoard from "../../components/DashBoard/dashboard";
 
 function Layout() {
 

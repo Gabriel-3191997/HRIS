@@ -16,7 +16,7 @@ function AddEmployee() {
               name="fn"
               id="fn"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 capitalize py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -30,7 +30,7 @@ function AddEmployee() {
               name="mn"
               id="mn"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 capitalize border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -44,7 +44,7 @@ function AddEmployee() {
               name="ln"
               id="ln"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 capitalize py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -58,7 +58,7 @@ function AddEmployee() {
               name="post"
               id="post"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 capitalize text-sm border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -70,7 +70,7 @@ function AddEmployee() {
             <select
               name="employment"
               id="emp"
-              className="w-full px-3 py-2 border border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 border text-sm border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option value="employee">Employee</option>
               <option value="contract">Contract</option>
@@ -90,7 +90,7 @@ function AddEmployee() {
               name="department"
               id="department"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 capitalize text-sm border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -104,7 +104,7 @@ function AddEmployee() {
               name="manager"
               id="manager"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 capitalize text-sm border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -118,7 +118,7 @@ function AddEmployee() {
               name="date"
               id="date"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-sm border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -132,7 +132,7 @@ function AddEmployee() {
               name="phone"
               id="phone"
               required
-              className="w-full px-3 py-2 border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-sm border border-gray-400 bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -144,7 +144,7 @@ function AddEmployee() {
             <select
               name="site"
               id="site"
-              className="w-full px-3 py-2 border border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-sm border border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option value="remote">Remote</option>
               <option value="onsite">Onsite</option>
@@ -161,7 +161,7 @@ function AddEmployee() {
             <select
               name="pay"
               id="pay"
-              className="w-full px-3 py-2 border border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-sm border border-gray-400 bg-white capitalize focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option value="monthly">Monthly</option>
               <option value="hourly">Hourly</option>
@@ -189,7 +189,7 @@ function AddEmployee() {
           <input
             type="submit"
             value="Save"
-            className="px-8 py-2.5 text-white bg-blue-900 font-medium cursor-pointer hover:bg-blue-800 transition-colors"
+            className="px-8 py-2.5 text-sm text-white bg-blue-900 font-medium cursor-pointer hover:bg-blue-800 transition-colors"
           />
         </div>
       </form>
