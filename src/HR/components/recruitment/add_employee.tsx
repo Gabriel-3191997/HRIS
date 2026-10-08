@@ -4,10 +4,10 @@ function AddEmployee() {
   return (
    <>
    
-    <div className="flex w-full sticky top-0 z-50 my-0 h-10 flex-wrap md:justify-start md:h-auto bg-white shadow-none md:items-start gap-0"></div>
+    <div className="flex w-full sticky top-0 z-50 my-0 h-10 flex-wrap md:justify-start md:h-10 bg-white border-b border-none md:items-start gap-0"></div>
             
-    <div className="max-w-4xl mx-auto p-6 bg-white">
-      <form action="post" className="space-y-6 md:mt-10">
+    <div className="max-w-4xl mx-auto md:mt-10 bg-white">
+      <form action="post" className="space-y-6 md:mt-0">
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
           {/* First Name */}
