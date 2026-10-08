@@ -2,6 +2,10 @@
 
 function AddEmployee() {
   return (
+   <>
+   
+    <div className="flex w-full sticky top-0 z-50 my-0 h-10 flex-wrap md:justify-start md:h-auto bg-white shadow-none md:items-start gap-0"></div>
+            
     <div className="max-w-4xl mx-auto p-6 bg-white">
       <form action="post" className="space-y-6 md:mt-10">
         
@@ -194,6 +198,7 @@ function AddEmployee() {
         </div>
       </form>
     </div>
+   </>
   );
 }
 
